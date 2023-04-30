@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+</head>
+
+<body>
+  <div class="linksHolder">
+    <a href="index.html">Google search</a>
+    <a href="advanceSearch.html">Advance search</a>
+  </div>
+
+  <div class="formHolder">
+    <div>
+      <h1>Google's</h1>
+      <h4>Image search</h4>
+      <form id="myForm">
+        <input id="queryBox" type="text">
+        <br>
+        <input id="submitButton" type="submit" value="Image search">
+      </form>
+    </div>
+  </div>
+  <footer>This site was made for educational/practice purpose</footer>
+
+
+
+
+  <script>
+    const submitButton = document.getElementById("submitButton");
+    let searchvalue = document.getElementById("queryBox");
+
+    // Add an event listener for the 'pageshow' event
+    window.addEventListener("pageshow", function (event) {
+      // If the page is being shown from the browser's cache
+      if (event.persisted) {
+        // Reset the form
+        myForm.reset();
+      }
+    });
+
+    submitButton.addEventListener("click", () => {
+      if (searchvalue.value != '') {
+        event.preventDefault();
+        window.location.href = `https://www.google.com/search?q=${encodeURIComponent(searchvalue.value)}&source=lnms&tbm=isch`;
+      }
+    });
+  </script>
+
+</body>
+
+</html>

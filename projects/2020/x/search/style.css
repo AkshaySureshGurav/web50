@@ -1,0 +1,104 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  * {
+    margin:0;
+    color: white;
+    font-weight: bold;
+  }
+  
+  body {
+    background: rgba(0, 0, 0, 0.9);
+  }
+  
+  a {
+    text-decoration: unset;
+  }
+  
+  .linksHolder {
+    text-align: right;
+    padding: 3vh;
+    box-shadow: 0px 1px 10px white;
+  }
+  
+  
+  .linksHolder > * {
+    margin: 2vh;
+  }
+  
+  form {
+    width: fit-content;
+    padding: 5vh;
+    display: grid;
+    place-items: center;
+  }
+  
+  .formHolder {
+    height: 85vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  
+  input[type="text"] {
+    display: inline-block;
+    border-radius: 24px;
+    background: rgba(0, 0, 0, 0.8);
+    width: 40vw;
+    height: 4vh;
+    font-size: 2.5vh;
+    padding: 1vh 2vw;
+    background: transparent;
+    border: 1px solid white;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h1, h4 {
+    text-align: center;
+    text-shadow: 1px 1px 2px white;
+  }
+  
+  form input {
+    padding: 1vh 2vh;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid white;
+  }
+  
+  
+  #AdvanceSearchForm > fieldset > div {
+    margin: 1vh 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #AdvanceSearchForm > fieldset > div > * {
+    margin: 0 1vw; 
+  }
+  
+  #AdvanceSearchForm > fieldset > div > input {
+    height: 3vh;
+    font-size: 1.8vh;
+  }
+  
+  legend {
+    font-size: 1.5rem;
+  } 
+  
+  div > label {
+    font-size: 1.1rem;
+  } 
+  
+  form > input[type="submit"] {
+    margin: auto;
+  }
+  
+  footer {
+    text-align: center;
+  }
